@@ -55,7 +55,7 @@ public class GifListViewModel extends ViewModel {
             if (response.body() != null) {
                 List<Gif> x = mutableLiveGifs.getValue();
                 Collection<Gif> responseList = response.body().data;
-                if (x!=null)
+                if (x != null)
                     x.addAll(responseList);
                 else
                     x = new ArrayList<>(responseList);
